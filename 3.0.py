@@ -2,8 +2,8 @@ import requests
 from urllib.parse import urlencode
 from data import *
 
-# APP_ID = APP_ID
-AUTH_URL = 'https://oauth.vk.com/authorize'
+
+AUTH_URL = AUTH_URL
 
 
 aut_data = {
@@ -17,7 +17,7 @@ print('?'.join((AUTH_URL, urlencode(aut_data))))
 
 
 class UserVk:
-    # TOKEN = TOKEN
+
     vk_link = 'https://api.vk.com/method/'
     param = {'v': '5.92',
              'access_token': TOKEN}
