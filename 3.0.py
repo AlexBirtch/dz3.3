@@ -2,10 +2,6 @@ import requests
 from urllib.parse import urlencode
 from data import *
 
-
-AUTH_URL = AUTH_URL
-
-
 aut_data = {
     'client_id': APP_ID,
     'scope': 'friends',
