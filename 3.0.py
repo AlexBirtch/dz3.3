@@ -53,11 +53,9 @@ if __name__ == "__main__":
     user1 = UserVk(user_input[0])
     user2 = UserVk(user_input[1])
 
-    print(user1 & user2)
+    print(f'Для пользователей: {user1.user_id} & {user2.user_id}, найдены общие друзья: ')
+    print(f'Количество общих друзей равно: {len(user1 & user2)} человек')
 
-
-    print(f'Для пользователей: {user1.user_id} & {user2.user_id} ' )
-    print('найдены общие друзья:')
     for item in user2 & user1:
         print(item)
     print(f'\nссылка на пользователя №1: {user1}')
